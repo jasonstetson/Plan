@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise Plan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: #F7F7F7;
+        }
+        .exercise-container {
+            width: 90%;
+            max-width: 600px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background: #FFF;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        .exercise-image {
+            width: 100%;
+            height: 50%;
+            object-fit: cover;
+        }
+        .exercise-info {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .exercise-info div {
+            flex-basis: 45%;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .next-button {
+            display: inline-block;
+            width: 100%;
+            padding: 15px 0;
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+        }
+        .next-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="exercise-container">
+        <img class="exercise-image" src="https://www.gymequip.eu/wp-content/uploads/2018/02/Leg-Press-Machine-D2-2.jpg" alt="Exercise Image">
+        <div class="exercise-info">
+            <div>Exercise: Leg Press</div>
+            <div>Weight: 30 kg</div>
+            <div>Target Reps: 20-25</div>
+            <div>Rest: 15-60 sec</div>
+            <div>Intensity: Easy Warm Up</div>
+        </div>
+        <a class="next-button" href="exercise2.html">Next Exercise</a>
+    </div>
+</body>
+</html>
