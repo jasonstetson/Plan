@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Exercise Plan</title>
+    <title>Træningsplan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
@@ -26,6 +26,12 @@
             overflow: hidden;
             box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
         }
+        .exercise-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+        }
         .exercise-image {
             width: 100%;
             height: 50%;
@@ -40,17 +46,19 @@
         .exercise-info div {
             flex-basis: 45%;
             margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        .exercise-info span {
             font-weight: bold;
-            font-size: 1.3em;  /* Increased font size for better readability on mobile devices */
         }
         .next-button {
             display: inline-block;
             width: 100%;
-            padding: 20px 0;  /* Increased padding for larger clickable area */
+            padding: 20px 0;
             background-color: #007BFF;
             color: white;
             text-align: center;
-            font-size: 1.3em;  /* Increased font size for better readability on mobile devices */
+            font-size: 1.3em;
             font-weight: bold;
             text-decoration: none;
             box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
@@ -62,15 +70,16 @@
 </head>
 <body>
     <div class="exercise-container">
-        <img class="exercise-image" src="https://www.gymequip.eu/wp-content/uploads/2018/02/Leg-Press-Machine-D2-2.jpg" alt="Exercise Image">
+        <div class="exercise-title">Øvelse: Benpres</div>
+        <img class="exercise-image" src="https://www.gymequip.eu/wp-content/uploads/2018/02/Leg-Press-Machine-D2-2.jpg" alt="Øvelsesbillede">
         <div class="exercise-info">
-            <div>Exercise: Leg Press</div>
-            <div>Weight: 30 kg</div>
-            <div>Target Reps: 20-25</div>
-            <div>Rest: 15-60 sec</div>
-            <div>Intensity: Easy Warm Up</div>
+            <div><span>Kategori:</span> Ben</div>
+            <div><span>Vægt:</span> 45.36 kg</div>
+            <div><span>Mål Reps:</span> 20-25</div>
+            <div><span>Hvile:</span> 15-60 sek</div>
+            <div><span>Intensitet:</span> Nem Opvarmning</div>
         </div>
-        <a class="next-button" href="next_page.html">Next Exercise</a>
+        <a class="next-button" href="next_page.html">Næste Øvelse</a>
     </div>
 </body>
 </html>
