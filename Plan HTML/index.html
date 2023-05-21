@@ -15,71 +15,102 @@
             height: 100vh;
             background: #121212;
             color: #fff;
-        }
-        .exercise-container {
-            width: 100%;
-            max-width: 600px;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            background: #1f1f1f;
-            overflow: hidden;
-            box-shadow: 0px 0px 10px rgba(255,255,255,0.1);
-        }
-        .exercise-title {
-            font-size: 1.3em;
-            font-weight: bold;
             text-align: center;
-            padding: 20px;
+            position: relative;
         }
-        .exercise-image {
-            width: 100%;
-            height: 50%;
-            object-fit: cover;
+        h1 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
         }
-        .exercise-info {
-            padding: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+        p {
+            max-width: 600px;
+            line-height: 1.6;
+            margin-bottom: 2em;
         }
-        .exercise-info div {
-            flex-basis: 45%;
-            margin-bottom: 10px;
-            font-size: 1.3em;
-        }
-        .exercise-info span {
-            font-weight: bold;
-        }
-        .next-button {
+        .button {
             display: inline-block;
-            width: 100%;
-            padding: 20px 0;
+            padding: 15px 30px;
             background-color: #007BFF;
             color: white;
             text-align: center;
-            font-size: 1.3em;
+            font-size: 1.5em;
             font-weight: bold;
             text-decoration: none;
+            border-radius: 10px;
             box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+            margin-bottom: 1em;
         }
-        .next-button:hover {
+        .button:hover {
             background-color: #0056b3;
         }
+        .help-icon {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: #007BFF;
+            text-decoration: none;
+            font-size: 2em;
+        }
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            color: #121212;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
     </style>
+    <script>
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    </script>
 </head>
 <body>
-    <div class="exercise-container">
-        <div class="exercise-title">Øvelse: Benpres</div>
-        <img class="exercise-image" src="https://www.gymequip.eu/wp-content/uploads/2018/02/Leg-Press-Machine-D2-2.jpg" alt="Øvelsesbillede">
-        <div class="exercise-info">
-            <div><span>Vægt:</span> 45.36 kg</div>
-            <div><span>Mål Reps:</span> 20-25</div>
-            <div><span>Hvile:</span> 15-60 sek</div>
-            <div><span>Intensitet:</span> Nem Opvarmning</div>
+    <h1>Fuld Krop Træningsplan (~60 minutter)</h1>
+    <p>Start med at varme op med 5-10 minutter cardio på moderat tempo. Du kan vælge den maskine, du foretrækker, før du starter med vægtene.</p>
+    <a class="button" href="exercise.html">Start Træningen</a>
+    <a class="help-icon" onclick="openModal()">?</a>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+               <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Hjælp til Træningsplan</h2>
+            <p>Jeg plejer at springe den første opvarmningssæt til kalve over</p>
+            <p>For at spare tid i træningscenteret, laver jeg kalveøvelser mellem sættene for ben, med meget lidt hvile imellem</p>
+            <p>Alle vægtene der er nævnt er eksempler, vælg en vægt der gør at du kan holde dig inden for det angivne repetitions- og intensitetsområde</p>
+            <p>Alle de valgte øvelser er eksempler, vælg den benmaskine der passer bedst til dig. Hvis du vælger benforlængelse og bencurl, så lav dem lige efter hinanden og betragt det som ét gigantisk sæt</p>
         </div>
-        <a class="next-button" href="next_page.html">Næste Øvelse</a>
     </div>
 </body>
 </html>
