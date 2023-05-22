@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<script>
+    function goToNextExercise() {
+        window.location.href = "exercise2.html";
+    }
+    
+    document.addEventListener("DOMContentLoaded", function() {
+        document.body.addEventListener("click", goToNextExercise);
+    });
+</script>
+
     <title>Træningsplan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">

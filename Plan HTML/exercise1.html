@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script>
+    function goToNextExercise() {
+        window.location.href = "exercise2.html";
+    }
+    
+    document.addEventListener("DOMContentLoaded", function() {
+        document.body.addEventListener("click", goToNextExercise);
+    });
+</script>
+
+
     <title>Træningsplan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
@@ -28,10 +40,10 @@
             box-shadow: 0px 0px 10px rgba(255,255,255,0.1);
         }
         .exercise-title {
-            font-size: 1.3em;
+            font-size: 2em;
             font-weight: bold;
             text-align: center;
-            padding: 20px;
+            padding: 40px 20px;
         }
         .exercise-image {
             width: 100%;
@@ -47,7 +59,7 @@
         .exercise-info div {
             flex-basis: 45%;
             margin-bottom: 10px;
-            font-size: 1.3em;
+            font-size: 1.5em;
         }
         .exercise-info span {
             font-weight: bold;
@@ -59,7 +71,7 @@
             background-color: #007BFF;
             color: white;
             text-align: center;
-            font-size: 1.3em;
+            font-size: 1.5em;
             font-weight: bold;
             text-decoration: none;
             box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
